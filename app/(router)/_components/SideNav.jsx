@@ -1,26 +1,7 @@
-import { BadgeIcon, BookOpen, GraduationCapIcon } from 'lucide-react';
 import Image from 'next/image';
-import React from 'react'
+import { menu } from "./menuData";
 
 const SideNav = () => {
-  const menu = [
-    {
-      id: 1,
-      name: "All Courses",
-      icon: BookOpen
-    },
-    {
-      id: 2,
-      name: "Membership",
-      icon: BadgeIcon
-    },
-    {
-      id: 3,
-      name: "Instructor",
-      icon: GraduationCapIcon
-    }
-  ];
-
   return (
     <div className="p-5 bg-white shadow-sm border h-screen">
       <div className="flex gap-2 items-center">
