@@ -22,7 +22,7 @@ const MobileNav = () => {
     <section className="w-full max-w-[264px]">
       <Sheet>
         <SheetTrigger asChild>
-         <Menu width={36} height={36} /> 
+         <Menu width={36} height={36} className="cursor-pointer" /> 
         </SheetTrigger>
         <SheetContent side="left" className="border-none bg-white">
         <SheetTitle className="hidden">
@@ -35,7 +35,7 @@ const MobileNav = () => {
       <hr className="mt-7" />
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto ">
             <SheetClose asChild>
-              <section className="flex h-full flex-col gap-6 pt-16 text-gray-500">
+              <section className="flex h-full flex-col mt-3 gap-6 text-gray-500">
                 {menu.map((item) => {
                   const isActive = pathname === item.route;
 
