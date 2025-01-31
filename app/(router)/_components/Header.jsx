@@ -1,9 +1,13 @@
 import { Button } from '@/components/ui/button'
 import { BellDot, Search } from 'lucide-react'
+import MobileNav from './MobileNav'
 
 const Header = () => {
   return (
     <div className="p-4 bg-white flex justify-between">
+      <div className="md:hidden">
+        <MobileNav />
+      </div>
       <div className="flex gap-2 border rounded-md p-2">
         <Search className="w-5 h-5" />
         <input type="text" placeholder="Search" className="outline-none" />
